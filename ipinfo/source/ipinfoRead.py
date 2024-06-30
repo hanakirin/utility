@@ -1,3 +1,4 @@
+import sys
 import requests
 
 def get_ip_info(ip_address, token):
@@ -13,7 +14,7 @@ def get_ip_info(ip_address, token):
         return None
 
 if __name__ == "__main__":
-    ip_address = input("Enter an IP address: ")
+    ip_address = sys.argv[1]
     token = "xxx"  # ここにIPinfoのAPIキーを入力してください
     ip_info = get_ip_info(ip_address, token)
     

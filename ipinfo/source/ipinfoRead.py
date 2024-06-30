@@ -22,7 +22,8 @@ if __name__ == "__main__":
     if len(sys.argv) == 2:
         ip_address = sys.argv[1]
     else:
-        print("Argument Error: python ipinfoRead.py {IP Address}") 
+        print("Argument Error: python ipinfoRead.py {IP Address}")
+        sys.exit()
 
     ip_info = get_ip_info(ip_address, api_key)
     if ip_info:
